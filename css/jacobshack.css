@@ -1,6 +1,33 @@
 @font-face {
-  font-family: Menlo;
-  src: local("../fonts/Menlo.ttc") format("truetype");
+  font-family: 'Menlo';
+  src: url("../fonts/Menlo/Menlo-Regular.woff") format('woff'),
+       url("../fonts/Menlo/Menlo-Regular.ttf") format('ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Menlo';
+  src: url("../fonts/Menlo/Menlo-Bold.woff") format('woff'),
+       url("../fonts/Menlo/Menlo-Bold.ttf") format('ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Menlo';
+  src: url("../fonts/Menlo/Menlo-Italic.woff") format('woff'),
+       url("../fonts/Menlo/Menlo-Italic.ttf") format('ttf');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Menlo';
+  src: url("../fonts/Menlo/Menlo-BoldItalic.woff") format('woff'),
+       url("../fonts/Menlo/Menlo-BoldItalic.ttf") format('ttf');
+  font-style: italic;
+  font-weight: bold;
 }
 
 body {
@@ -14,7 +41,7 @@ h4,
 h5,
 h6 {
   font-family: 'Menlo';
-  font-weight: 800 !important;
+  font-weight: bold !important;
   display: inline-block;
 }
 
