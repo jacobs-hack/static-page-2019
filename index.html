@@ -80,7 +80,7 @@
     <section class="page-section page-section-dark" id="registration_section">
       <div class="container section-content">
         <h1>Registration is now open!</h1><br /><br /><br />
-        <h3>Head over to <a href="https://apply.jacobshack.com/" target="_blank">the jacobsHack! Application Portal</a> to get started!</h3>
+        <h3>Head over to the <a href="https://apply.jacobshack.com/" target="_blank">jacobs<i>Hack</i>! Application Portal</a> to get started.</h3>
       </div>
     </section>
 
@@ -120,14 +120,66 @@
     <!-- Footer -->
     <footer class="py-5">
       <div class="container">
-        <p class="m-0 text-center small" style="font-family: 'Menlo';">Copyright &copy; 2018 jacobs<i>Hack</i>! 
-          <a href="/imprint/" target="_blank">Imprint</a> -
-          <a href="/terms/" target="_blank">Terms & Conditions</a> - 
-          <a href="/privacy/" target="_blank">Privacy Policy</a>
+        <p class="m-0 text-center small" style="font-family: 'Menlo';">
+          <button type="button" class="btn btn-link" data-toggle="modal" data-target=".imprint_modal"><small>Imprint</small></button>-
+          <button type="button" class="btn btn-link" data-toggle="modal" data-target=".tc_modal"><small>Terms & Conditions</small></button>-
+          <button type="button" class="btn btn-link" data-toggle="modal" data-target=".pp_modal"><small>Privacy Policy</small></button>
+        </p>
+        <br />
+        <p class="m-0 text-center small" style="font-family: 'Menlo';">Copyright &copy; 2018 jacobs<i>Hack</i>!
         </p>
       </div>
       <!-- /.container -->
     </footer>
+
+    <!-- Imprint, T&C, PP Modals -->
+    <div class="modal fade imprint_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Imprint</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe src="./imprint/index.html" frameBorder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade tc_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Terms &amp; Conditions</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe src="./terms/index.html" frameBorder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade pp_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Privacy Policy</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe src="./privacy/index.html" frameBorder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- FAQ Modal -->
     <div class="modal fade" id="faq_modal" tabindex="-1" role="dialog" aria-labelledby="faq_modal_title" aria-hidden="true">

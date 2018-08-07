@@ -222,3 +222,13 @@ section.page-section-dark .section-content{
   vertical-align: middle;
   display: inline;
 }
+
+.modal-body {
+  height: 85vh;
+}
+
+.modal-body iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
