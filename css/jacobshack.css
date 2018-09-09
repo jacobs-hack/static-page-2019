@@ -209,9 +209,9 @@ section.page-section-dark .section-content{
   color: #1c437c;
 }
 
-.sponsors-col {
-  display: inline;
-  height: 180px;
+.sponsors-table {
+  width: 100%; 
+  table-layout: fixed;
 }
 
 .sponsors-table img{
@@ -222,3 +222,4 @@ section.page-section-dark .section-content{
   vertical-align: middle;
   display: inline;
 }
+
