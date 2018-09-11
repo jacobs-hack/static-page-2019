@@ -25,22 +25,24 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-      <div class="container" style="font-family: 'Menlo';">
-        <a class="navbar-brand navbar-brand-link" href="#page-header">jacobs<i>Hack</i>! 2018</a>
+      <div class="navbar-content" style="font-family: 'Menlo';">
+        <a class="navbar-brand navbar-brand-link" href="#page-header" id="homepage_button">jacobs<i>Hack</i>! 2018</a>
       </div>
     </nav>
     <!-- MLH Badge -->
-    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/eu-2019/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-gray.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
+    <a class="mlh-trust-badge" id="mlh-trust-badge" href="https://mlh.io/seasons/eu-2019/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-gray.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
     <!-- First Section, page header -->
     <header class="masthead text-center text-white" id="page-header">
       <div class="masthead-content">
-        <div class="container">
+        <div class="">
           <img src="img/jacobshack-logo-name-bw@2x.png" class="header-image"/>
           <br />
-          <h2 id="date-field"></h2>
+          <h2 class="date-field" id="date-field"></h2>
           <br /><br />
-          <a class="btn btn-outline-light btn-lg link-btn" style="font-family: 'Menlo';" href="#registration_section" id="register_button">Register for jacobs<i>Hack</i>!</a>
-          <button class="btn btn-outline-light btn-lg link-btn" data-toggle="modal" data-target="#faq_modal" style="font-family: 'Menlo';">FAQ</button>
+          <div style="display: inline-block;">
+            <a class="btn btn-outline-light btn-lg link-btn" href="#registration_section" id="register_button">Apply for jacobs<i>Hack</i>!</a>
+            <button class="btn btn-outline-light btn-lg link-btn" data-toggle="modal" data-target="#faq_modal">FAQ</button>
+          </div>
         </div>
       </div>
     </header>
@@ -54,7 +56,7 @@
               <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                  <p>jacobs<i>Hack</i>! is one of Germany's largest student-run hackathon where student hackers from all over the world come together to create and
+                  <p>jacobs<i>Hack</i>! 2018, the 5th edition of jacobs<i>Hack</i>!, is one of Germany's largest student-run hackathon where student hackers from all over the world come together to create and
                     collaborate on kick-ass projects over the course of 24 hours filled with programming, tech talks, games, and epic Nerf gun battles.</p>
                 </div>
                 <div class="col-lg-2"></div>
@@ -74,32 +76,66 @@
 
     <section class="page-section">
       <div class="container section-content-sponsors">
-        <h1>jacobs<i>Hack</i>! was previously sponsored by:</h1><br/ ><br />
-        <table class="sponsors-table" width="100%" style="display: block;">
+        <h1>jacobs<i>Hack</i>! 2018 is an official <br/>MLH Member Event</h1><br/>
+        <table class="mlh-event-table" style="width: 100%; table-layout: fixed; margin: 0 auto;">
           <tr>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to MLH page" href="https://mlh.io"><img src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.svg" class="mx-auto" alt="Major League Hacking" /></a></td>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to Google page" href="https://www.google.com"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="mx-auto" /></a></td>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to Microsoft page" href="https://www.microsoft.com/"><img id="sponsor_logo_microsoft" class="mx-auto" alt="Microsoft" src="img/sponsor_logos/microsoft.svg" /></a></td>
+            <td class="align-middle" colspan="4"><img src="img/jacobshack-logo-name-year@2x.png" class="mx-auto" alt="jacobsHack!" /></td>
+            <td class="align-middle" colspan="1"><h2>&amp;</h2></td>
+            <td class="align-middle" colspan="4"><a target="_blank" title="Go to MLH page" href="https://mlh.io"><img src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.svg" class="mx-auto" alt="Major League Hacking" /></a></td>
+          </tr>
+        </table>
+        <h1>and is sponsored by:</h1>
+        <br/><br/><br/>
+        <table class="sponsors-table">
+          <tr>
+            <td colspan="6" style="height: 1rem; padding-bottom: 0rem;"><h3><i>Gold tier sponsors</i><h3></td>
           </tr>
           <tr>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to Rocket Internet page" href="https://www.rocket-internet.com"><img id="sponsor_logo_rocketinternet" src="img/sponsor_logos/rocket_internet.png" alt="Rocket Internet" class="mx-auto" /></a></td>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to Careerloft page" href="https://careerloft.de"><img id="sponsor_logo_careerloft" class="mx-auto" alt="Microsoft" src="img/sponsor_logos/careerloft.png" class="mx-auto" /></a></td>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to Entrepreneur First page" href="https://www.joinef.com"><img  id="sponsor_logo_entrepreneurfirst" src="img/sponsor_logos/entrepreneur_first.png" alt="Entrepreneur First" class="mx-auto" /></a></td>
+            <td class="align-middle" colspan="6"><a target="_blank" title="Go to Facebook" href="https://facebook.com"><img src="img/sponsor_logos/2018/facebook.png" class="mx-auto" alt="Facebook" /></a></td>
           </tr>
           <tr>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to Skyscanner page" href="https://www.skyscanner.com"><img id="sponsor_logo_skyscanner" class="mx-auto" alt="Skyscanner" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/001/629/highres/skyscanner_web_use_logo.png"></a></td>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to Amazon Alexa page" href="https://developer.amazon.com/alexa"><img id="sponsor_logo_amazonalexa" class="mx-auto" alt="Amazon Alexa" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/002/145/highres/amazon.png"></a></td>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to Twilio page" href="https://www.twilio.com/"><img id="sponsor_logo_twilio" class="mx-auto" alt="Twilio" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/001/630/highres/Twilio_logo_red.png"></a></td>
+            <td colspan="6" style="height: 1rem; padding-bottom: 0rem;"><h3><i>Silver tier sponsors</i></h3></td>
           </tr>
           <tr>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to Cliqz page" href="https://cliqz.com/en/"><img id="sponsor_logo_cliqz" class="mx-auto" alt="Cliqz" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/002/146/highres/cliqz.png"></a></td>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to ACSK page" href="http://acskclothing.com/"><img id="sponsor_logo_acsk" class="mx-auto" alt="ACSK" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/002/149/highres/acsk-min.png"></a></td>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to Yelp page" href="https://www.yelp.com/"><img id="sponsor_logo_yelp" class="mx-auto" alt="Yelp" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/001/631/highres/Yelp_fullcolor_lightbg_RGB.png"></a></td>
+            <td class="align-middle" colspan="2"></td>
+            <td class="align-middle" colspan="2"><a target="_blank" title="Go to Skyscanner" href="https://www.skyscanner.com"><img src="img/sponsor_logos/2018/skyscanner.png" class="mx-auto" alt="Skyscanner" /></a></td>
+            <td class="align-middle" colspan="2"></td>
           </tr>
           <tr>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to Bloomberg page" href="http://www.bloomberg.com/"><img id="sponsor_logo_bloomberg" class="mx-auto d-block" alt="Bloomberg" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/002/147/highres/bloomberg.png"></a></td>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to Hack Harassment page" href="http://www.hackharassment.com/"><img id="sponsor_logo_hack harassment" class="mx-auto d-block" alt="Hack Harassment" src="img/sponsor_logos/hack_harassment.png"></a></td>
-            <td class="align-middle" width="33%"><a target="_blank" title="Go to .tech page" href="http://get.tech"><img id="sponsor_logo_.tech" class="mx-auto d-block" alt=".tech" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/002/166/highres/tech.png"></a></td>
+            <td colspan="6" style="height: 1rem; padding-bottom: 0rem;"><h3><i>API tier sponsors</i></h3></td>
+          </tr>
+          <tr>
+            <td class="align-middle" colspan="2"><a target="_blank" title="Go to Daimler" href="https://www.daimler.com/"><img src="img/sponsor_logos/2018/daimler.png" class="mx-auto" alt="Daimler" /></a></td>
+            <td class="align-middle" colspan="2"><a target="_blank" title="Go to Deep Web Solutions" href="https://www.deep-web-solutions.de/"><img src="img/sponsor_logos/2018/deepweb.png" class="mx-auto" alt="Deep Web Solutions" /></a></td>
+            <td class="align-middle" colspan="2"><a target="_blank" title="Go to Bloomberg" href="https://www.bloomberg.com/"><img src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/002/147/highres/bloomberg.png" class="mx-auto" alt="Bloomberg" /></a></td>
+          </tr>
+        </table>
+        <h3><img src="img/separator@2x.png" class="mx-auto" width="100px"/></h3>
+        <br/><br/><br/>
+        <h3>jacobs<i>Hack</i>! was previously sponsored by:</h3><br/ ><br />
+        <table class="previous-sponsors-table">
+          <tr>
+            <td class="align-middle" colspan="3"><a target="_blank" title="Go to MLH page" href="https://mlh.io"><img src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.svg" class="mx-auto" alt="Major League Hacking" /></a></td>
+            <td class="align-middle" colspan="3"><a target="_blank" title="Go to Google page" href="https://www.google.com"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="mx-auto" /></a></td>
+            <td class="align-middle" colspan="3"><a target="_blank" title="Go to Microsoft page" href="https://www.microsoft.com/"><img id="sponsor_logo_microsoft" class="mx-auto" alt="Microsoft" src="img/sponsor_logos/microsoft.svg" /></a></td>
+            <td class="align-middle" colspan="3"><a target="_blank" title="Go to Rocket Internet page" href="https://www.rocket-internet.com"><img id="sponsor_logo_rocketinternet" src="img/sponsor_logos/rocket_internet.png" alt="Rocket Internet" class="mx-auto" /></a></td>
+          </tr>
+          <tr>
+            <td class="align-middle" colspan="3"><a target="_blank" title="Go to Skyscanner page" href="https://www.skyscanner.com"><img id="sponsor_logo_skyscanner" class="mx-auto" alt="Skyscanner" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/001/629/highres/skyscanner_web_use_logo.png"></a></td>
+            <td class="align-middle" colspan="3"><a target="_blank" title="Go to Amazon Alexa page" href="https://developer.amazon.com/alexa"><img id="sponsor_logo_amazonalexa" class="mx-auto" alt="Amazon Alexa" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/002/145/highres/amazon.png"></a></td>
+            <td class="align-middle" colspan="3"><a target="_blank" title="Go to Careerloft page" href="https://careerloft.de"><img id="sponsor_logo_careerloft" class="mx-auto" alt="Microsoft" src="img/sponsor_logos/careerloft.png" class="mx-auto" /></a></td>
+            <td class="align-middle" colspan="3"><a target="_blank" title="Go to Entrepreneur First page" href="https://www.joinef.com"><img  id="sponsor_logo_entrepreneurfirst" src="img/sponsor_logos/entrepreneur_first.png" alt="Entrepreneur First" class="mx-auto" /></a></td>
+          </tr>
+          <tr>
+            <td class="align-middle" colspan="3"><a target="_blank" title="Go to Twilio page" href="https://www.twilio.com/"><img id="sponsor_logo_twilio" class="mx-auto" alt="Twilio" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/001/630/highres/Twilio_logo_red.png"></a></td>
+            <td class="align-middle" colspan="3"><a target="_blank" title="Go to Cliqz page" href="https://cliqz.com/en/"><img id="sponsor_logo_cliqz" class="mx-auto" alt="Cliqz" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/002/146/highres/cliqz.png"></a></td>
+            <td class="align-middle" colspan="3"><a target="_blank" title="Go to ACSK page" href="http://acskclothing.com/"><img id="sponsor_logo_acsk" class="mx-auto" alt="ACSK" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/002/149/highres/acsk-min.png"></a></td>
+            <td class="align-middle" colspan="3"><a target="_blank" title="Go to Yelp page" href="https://www.yelp.com/"><img id="sponsor_logo_yelp" class="mx-auto" alt="Yelp" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/001/631/highres/Yelp_fullcolor_lightbg_RGB.png"></a></td>
+          </tr>
+          <tr>
+            <td class="align-middle" colspan="4"><a target="_blank" title="Go to Bloomberg page" href="http://www.bloomberg.com/"><img id="sponsor_logo_bloomberg" class="mx-auto d-block" alt="Bloomberg" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/002/147/highres/bloomberg.png" style="max-height: 60%; max-width: 60%;"></a></td>
+            <td class="align-middle" colspan="4"><a target="_blank" title="Go to Hack Harassment page" href="http://www.hackharassment.com/"><img id="sponsor_logo_hack harassment" class="mx-auto d-block" alt="Hack Harassment" src="img/sponsor_logos/hack_harassment.png" style="max-height: 60%; max-width: 60%;"></a></td>
+            <td class="align-middle" colspan="4"><a target="_blank" title="Go to .tech page" href="http://get.tech"><img id="sponsor_logo_.tech" class="mx-auto d-block" alt=".tech" src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/002/166/highres/tech.png" style="max-height: 60%; max-width: 60%;"></a></td>
           </tr>
         </table>
       </div>
@@ -191,7 +227,7 @@
                   </div>
                   <div id="c1" class="collapse" aria-labelledby="heading1" data-parent="#faq">
                     <div class="card-body">
-                        jacobs<i>Hack</i>! is open to students (from high school students over 18 years of age to post-docs) and those that have graduated from university in the past twelve months. 
+                        jacobs<i>Hack</i>! is open to students (from high school students over 18 years of age to post-docs) and those that have graduated from university in the past twelve months.
                         In order to participate, you need to follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code Of Conduct</a>.
                     </div>
                   </div>
@@ -400,7 +436,17 @@
       });
       $(document).ready(function () {
             $('.collapse').on('shown.bs.collapse', function() { $(this).parent().find(".fa-angle-right").removeClass("fa-angle-right").addClass("fa-angle-down"); }).on('hidden.bs.collapse', function() { $(this).parent().find(".fa-angle-down").removeClass("fa-angle-down").addClass("fa-angle-right"); });
-            $('#register_button').click(function(e) { e.preventDefault(); $('html, body').animate({scrollTop: $($(this).attr("href")).offset().top}, 1500);});
+            $('#register_button, #homepage_button').click(function(e) { e.preventDefault(); $('html, body').animate({scrollTop: $($(this).attr("href")).offset().top}, 1500);});
+            $(".navbar").hide();
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('.navbar').fadeIn();
+                    } else {
+                        $('.navbar').fadeOut();
+                    }
+                });
+            });
         });
     </script>
 
