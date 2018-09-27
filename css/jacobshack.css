@@ -210,7 +210,6 @@ section.page-section-dark .section-content{
 }
 
 .sponsors-table {
-  width: 100%;
   table-layout: fixed;
 }
 
@@ -225,10 +224,11 @@ section.page-section-dark .section-content{
   max-height: 90%;
   vertical-align: middle;
   display: inline;
+  padding: 10px;
 }
 
 .sponsors-table td{
-  height: 15rem;
+  max-height: 15rem;
 }
 
 .previous-sponsors-table td{
@@ -271,6 +271,11 @@ section.page-section-dark .section-content{
   margin-left: 50px;
 }
 
+.sponsors-table {
+  width: 50vw;
+  margin: 0px auto;
+}
+
 @media all and (max-width : 450px), (max-height : 450px)
 {
   .date-field {
@@ -303,8 +308,12 @@ section.page-section-dark .section-content{
   .previous-sponsors-table td{
     height: 4rem;
   }
+  .sponsors-table {
+    width: 80vw;
+    margin: 0px auto;
+  }
   .sponsors-table td{
-    height: 8rem;
+    /* height: 8rem; */
   }
   .mlh-event-table td{
     height: 10rem;
@@ -349,8 +358,12 @@ section.page-section-dark .section-content{
   .previous-sponsors-table td{
     height: 4rem;
   }
+  .sponsors-table {
+    width: 90vw;
+    margin: 0px auto;
+  }
   .sponsors-table td{
-    height: 8rem;
+    /* height: 8rem; */
   }
   .mlh-event-table td{
     height: 10rem;
