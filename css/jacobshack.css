@@ -156,6 +156,10 @@ section.page-section {
   background-color: #fff;
 }
 
+section.page-section-schedule {
+  padding-top: 2rem;
+}
+
 section.page-section-dark {
   background-color: #000;
 }
@@ -190,6 +194,11 @@ section.page-section-dark .section-content{
   color: #fff;
   text-align: center;
   white-space: normal;
+}
+
+section.page-section .section-content-schedule{
+  text-align: center;
+  color: #fff;
 }
 
 .my-card {
