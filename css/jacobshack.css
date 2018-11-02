@@ -241,6 +241,7 @@ section.page-section-dark .section-content{
 
 .modal-body {
   height: 85vh;
+  overflow-y: scroll;
 }
 
 .modal-body iframe {
@@ -253,7 +254,7 @@ section.page-section-dark .section-content{
   margin: 5px;
   border-radius: 2.5rem;
   font-family: 'Menlo';
-  width: 300px;
+  min-width: 270px;
 }
 
 .mlh-trust-badge {
@@ -274,6 +275,16 @@ section.page-section-dark .section-content{
 .sponsors-table {
   width: 50vw;
   margin: 0px auto;
+}
+
+.location_map {
+	height: 400px;
+}
+
+.location_map_iframe {
+  display: block;
+	width: 100% !important;
+	height: 100% !important;
 }
 
 @media all and (max-width : 450px), (max-height : 450px)
@@ -322,7 +333,7 @@ section.page-section-dark .section-content{
     margin: 5px;
     border-radius: 2.5rem;
     font-size: medium;
-    width: 250px;
+    /* width: 250px; */
   }
 }
 
@@ -372,7 +383,7 @@ section.page-section-dark .section-content{
     margin: 5px;
     border-radius: 2.5rem;
     font-size: small;
-    width: 200px;
+    /* width: 200px; */
   }
 }
 
