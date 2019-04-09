@@ -32,6 +32,7 @@
 
 body {
   font-family: sans-serif;
+  background-color: black;
 }
 
 h1,
@@ -43,6 +44,10 @@ h6 {
   font-family: 'Menlo';
   font-weight: bold !important;
   display: inline-block;
+}
+
+.date-field {
+    font-style: italic;
 }
 
 .btn-xl {
@@ -300,6 +305,7 @@ section.page-section .section-content-schedule{
 {
   .date-field {
     font-size: 22px;
+    font-style: italic;
   }
   .mlh-trust-badge {
     display:block;
@@ -350,6 +356,7 @@ section.page-section .section-content-schedule{
 {
   .date-field {
     font-size: large;
+    font-style: italic;
   }
   .mlh-trust-badge{
     display:block;
