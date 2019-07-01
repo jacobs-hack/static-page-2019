@@ -30,8 +30,16 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: 'PX Sans';
+  src: url("../fonts/PX_Sans/px_sans.ttf");
+}
+
 body {
   font-family: sans-serif;
+}
+
+footer {
   background-color: black;
 }
 
@@ -41,13 +49,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Menlo';
-  font-weight: bold !important;
+  font-family: 'PX Sans';
   display: inline-block;
 }
 
 .date-field {
-    font-style: italic;
+    /*font-style: italic;*/
+    color: #ec6351;
 }
 
 .btn-xl {
@@ -92,7 +100,7 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background-color: #000;
+  background-color: #fff;
 }
 
 header.masthead .masthead-content {
@@ -148,12 +156,42 @@ header.masthead .masthead-content .masthead-subheading {
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
 }
 
+.btn-apply {
+  border-color: #f20070;
+  border-width: 0.5rem;
+  background-color: rgba(255,255,255,0);
+  color: #f20070;
+}
+
+.btn-faq {
+  border-color: #449d76;
+  border-width: 0.5rem;
+  background-color: rgba(255,255,255,0);
+  color: #449d76;
+}
+
 .header-image {
   max-height: 60vh;
   max-width: 80vw;
 }
 
 section.page-section {
+  min-height: 100vh;
+  position: relative;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 0.5rem;
+  background-color: #fff;
+}
+
+section.page-section-sponsors {
+  min-height: 100vh;
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: #fff;
+}
+
+section.page-section-location {
   min-height: 100vh;
   position: relative;
   padding-top: calc(7rem + 72px);
@@ -168,6 +206,21 @@ section.page-section-schedule {
 section.page-section-dark {
   background-color: #000;
 }
+
+section.page-section-purple {
+  background-color: #6f30a5;
+}
+
+section.page-section-neonpink {
+  background-color: #be006b;
+  color: #ec6351;
+}
+
+section.page-section-gray {
+  background-color: #cccccc;
+  color: #ec6351;
+}
+
 
 section.page-section .section-content{
   z-index: 1;
@@ -188,6 +241,20 @@ section.page-section .section-content-sponsors{
 }
 
 section.page-section-dark .section-content{
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  white-space: normal;
+}
+
+section.page-section-purple .section-content{
   z-index: 1;
   left: 50%;
   top: 50%;
