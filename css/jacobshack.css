@@ -163,7 +163,7 @@ header.masthead .masthead-content .masthead-subheading {
   color: #f20070;
 }
 
-.btn-faq {
+.btn-faq, .btn-faq:hover {
   border-color: #449d76;
   border-width: 0.5rem;
   background-color: rgba(255,255,255,0);
